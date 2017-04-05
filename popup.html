@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Materialette</title>
+  
+  
+  <link rel='stylesheet prefetch' href="color.css">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="flow">
+ 
+  <div id="container">
+    <section id="controls">
+      <div class="col">
+        <div id="mode-selector" class="clickable hint--bottom" aria-label="Toggle modes" onclick="changeOutput()">
+          <div id="current-output">hex</div>
+          <div><i class="fa fa-retweet"></i></div>
+        </div>
+      </div>
+      <div class="col">
+        <input id="pin-state" type="checkbox" />
+        <label id="pin" for="pin-state" class="clickable hint--bottom-left" aria-label="Pin to keep visible"><i class="fa fa-thumb-tack"></i></label>
+        <div id="hide" class="clickable hint--bottom" aria-label="Hide"><i class="fa fa-close"></i></div>
+        <div id="close" class="clickable hint--bottom-left" aria-label="Quit"><i class="fa fa-power-off"></i></div>
+      </div>
+    </section>
+
+    <div id="key">
+      <div class="color" style="background-color:#FFF; color: #000;" data-series=""> white </div>
+      <div class="color" style="background-color:#000; color: #FFF" data-series=""> black </div>
+    </div>
+
+    <div id="tooltip" class="hidden">
+      Color
+    </div>
+    <textarea id="clipboard" readonly></textarea>
+  </div>
+
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
